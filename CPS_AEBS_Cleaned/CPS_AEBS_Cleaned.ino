@@ -10,13 +10,13 @@
 
 #define AIO_SERVER      "io.adafruit.com"
 #define AIO_SERVERPORT  1883
-#define AIO_USERNAME  "XuLiang"
-#define AIO_KEY       "aio_uMRq67VBqW55TYgqgjpD0ZVvFSDW"
+#define AIO_USERNAME  // user name
+#define AIO_KEY       //key
 
 int currentSpeed = 60; //Speed for testing purpose
 int Speed = 0; // initialize the speed to 0
-char ssid[]=  "ARRIS-EC32";
-char pass[] ="2W4335100786";
+char ssid[]=  // your wifi
+char pass[] = // password to your wifi
 int status = WL_IDLE_STATUS;
 WiFiEspClient client;
 Adafruit_MQTT_Client mqtt(&client, AIO_SERVER, AIO_SERVERPORT,
