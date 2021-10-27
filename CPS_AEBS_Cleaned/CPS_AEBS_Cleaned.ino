@@ -108,8 +108,6 @@ void loop() {
   acceleration = acceleration / 9.81;  // conver the unit of the acceleration to "g"
   Serial.println(distanceScaled);
 
-
-
   if (acceleration >= 0.7) {
     decision = 3; // 3 is stop, 2 is reduce the speed, 1 is go
   } else if (acceleration >= 0.4 && acceleration < 0.7){
@@ -120,8 +118,6 @@ void loop() {
   
   Serial.println(decision);
     
-  
-
   Serial.print(F("\nSending values "));
   if (! input1.publish(distanceScaled)) {
   Serial.println(F("Failed"));
@@ -135,8 +131,6 @@ void loop() {
   }
   delay(5000);
   }
-
-
 
 void MQTT_connect() {
  int8_t ret;
